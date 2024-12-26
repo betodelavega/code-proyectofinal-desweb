@@ -1,0 +1,15 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "coder-proyecto",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cocinarte"
+  ],
+  "author": "De la vega Alberto",
+  "license": "ISC"
+}
