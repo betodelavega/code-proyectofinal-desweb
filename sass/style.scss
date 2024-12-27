@@ -1,0 +1,200 @@
+@use "./utilities/mixin";
+
+@use "./global/reset";
+
+@use "./components/header";
+@use "./components/logo";
+@use "./components/footer";
+@use "./components/container";
+@use "./components/button";
+@use "./components/navbar";
+
+
+@use "./utilities/media-query";
+
+
+
+.full-width {
+    width: 35%;
+    height: 35%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+  
+    @include media-query.respond-to(large) {
+      width: 50%;
+      height: auto;
+    }
+  
+    @include media-query.respond-to(medium) {
+      width: 70%;
+      height: auto;
+    }
+  
+    @include media-query.respond-to(small) {
+      width: 90%;
+      height: auto;
+    }
+  }
+  
+  .side-image {
+    max-width: 20%;
+    height: 80%;
+    margin-right: 20px;
+  
+    @include media-query.respond-to(large) {
+      max-width: 30%;
+    }
+  
+    @include media-query.respond-to(medium) {
+      max-width: 40%;
+    }
+  
+    @include media-query.respond-to(small) {
+      max-width: 50%;
+    }
+  }
+  
+  .side-paragraph {
+    max-width: 50%;
+  
+    @include media-query.respond-to(large) {
+      max-width: 60%;
+    }
+  
+    @include media-query.respond-to(medium) {
+      max-width: 80%;
+    }
+  
+    @include media-query.respond-to(small) {
+      max-width: 100%;
+    }
+  }
+  
+  h1 {
+    font-size: 50px;
+  
+    @include media-query.respond-to(large) {
+      font-size: 40px;
+    }
+  
+    @include media-query.respond-to(medium) {
+      font-size: 30px;
+    }
+  
+    @include media-query.respond-to(small) {
+      font-size: 25px;
+    }
+  }
+  
+  h2.link {
+    font-size: 30px;
+  
+    @include media-query.respond-to(large) {
+      font-size: 25px;
+    }
+  
+    @include media-query.respond-to(medium) {
+      font-size: 20px;
+    }
+  
+    @include media-query.respond-to(small) {
+      font-size: 18px;
+    }
+  }
+  
+  p {
+    font-size: 20px;
+  
+    @include media-query.respond-to(large) {
+      font-size: 18px;
+    }
+  
+    @include media-query.respond-to(medium) {
+      font-size: 16px;
+    }
+  
+    @include media-query.respond-to(small) {
+      font-size: 14px;
+    }
+  }
+  
+  .button {
+    font-size: 20px;
+  
+    @include media-query.respond-to(large) {
+      font-size: 18px;
+    }
+  
+    @include media-query.respond-to(medium) {
+      font-size: 16px;
+    }
+  
+    @include media-query.respond-to(small) {
+      font-size: 14px;
+    }
+  }
+  
+  .circular-image {
+    width: 500px;
+    height: 500px;
+  
+    @include media-query.respond-to(large) {
+      width: 400px;
+      height: 400px;
+    }
+  
+    @include media-query.respond-to(medium) {
+      width: 300px;
+      height: 300px;
+    }
+  
+    @include media-query.respond-to(small) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  .responsive-section {
+    .container {
+      flex-direction: row;
+      text-align: left;
+  
+      @include media-query.respond-to(medium) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  
+    .side-image {
+      @include media-query.respond-to(medium) {
+        max-width: 80%;
+        margin: 0 auto 20px;
+      }
+  
+      @include media-query.respond-to(small) {
+        max-width: 100%;
+        margin: 0 auto 20px;
+      }
+    }
+  
+    .side-paragraph {
+      @include media-query.respond-to(medium) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .pagination .page-link {
+    color: #050505; // Cambia este valor al color que desees
+    font-family: 'Arial', sans-serif; // Cambia este valor a la fuente que desees
+}
+
+.pagination .page-link:hover {
+    color: #052664; // Cambia este valor al color que desees para el hover
+}
+

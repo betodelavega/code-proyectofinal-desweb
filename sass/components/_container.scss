@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  
+    .side-image {
+      max-width: 20%;
+      height: auto;
+      margin-right: 20px;
+    }
+  
+    .side-paragraph {
+      max-width: 50%;
+    }
+  }
+
+
+  

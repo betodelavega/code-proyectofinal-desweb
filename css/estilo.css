@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+
+
+
+body {
+    font-family: 'Brygada 1918', serif; /* Aplica la fuente Brygada 1918 al cuerpo del documento */
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Base font size */
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../asset/img/www.cocinarte.com2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5; /* Ajusta este valor para cambiar la opacidad */
+    z-index: -1;
+  }
+ 
+  .full-width { /* Clase para hacer que un elemento ocupe todo el ancho de la pantalla IMAGEN LOGO-GIF */
+    width: 35%;
+    height: 35%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);}
+
+
+.container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+      }
+      
+      .side-image {
+        max-width: 20%;
+        height: auto;
+        margin-right: 20px;
+      }
+      
+      .side-paragraph {
+        max-width: 50%;
+      }
+
+h1{
+    font-family: 'Ysabeau SC', sans-serif; /* Aplica la fuente Ysabeau SC al h1 */
+    center: 100%;
+    color: #575656;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 0;
+    padding: 50px;
+ }
+
+ h2.link {
+    font-family: 'Ysabeau SC', sans-serif; /* Aplica la fuente Ysabeau SC al h2 */
+    color: #575656;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h2.link:hover {
+    color: #000;
+}
+
+ p {
+    font-family: 'Brygada 1918', serif; /* Aplica la fuente Brygada 1918 a los párrafos */
+    color: #575656;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .button {
+    font-family: 'Ysabeau SC', sans-serif; /* Aplica la fuente Ysabeau SC a los botones */
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #575656;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .button:hover {
+    background-color: #000;
+  }
+
+  .button:active {
+    background-color: #000;
+  }
+
+  .button:focus {
+    background-color: #000;
+  }
+
+  .button:visited {
+    background-color: #000;
+  }
+
+  .button:link  {
+    background-color: #000;
+  }
+
+  .navbar {
+    font-family: 'Ysabeau SC', sans-serif; /* Cambia la fuente del navbar */
+    text-align: center; /* Centra el texto */
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos del navbar */
+    width: 100%;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 20px; /* Espacio entre los elementos del navbar */
+  }
+
+  .circular-image {
+    border-radius: 80%;
+    width: 500px; /* Ajusta el tamaño según sea necesario */
+    height: 500px; /* Ajusta el tamaño según sea necesario */
+    object-fit: cover;
+    margin-top: 30px ;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+
+  /* Estilos del pie de página */
+.fondoFooter {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .fondoFooter p,
+  .fondoFooter a {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Redes sociales en el pie de página */
+  .fondoFooter .redesSociales {
+    margin: 10px 0;
+  }
+  
+  .fondoFooter .redesSociales a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .fondoFooter .redesSociales a img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .fondoFooter .redesSociales a:hover {
+    transform: scale(1.2);
+  }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .full-width {
+        width: 50%;
+        height: auto;
+    }
+
+    .side-image {
+        max-width: 30%;
+    }
+
+    .side-paragraph {
+        max-width: 60%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2.link {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+    .circular-image {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .full-width {
+        width: 70%;
+        height: auto;
+    }
+
+    .side-image {
+        max-width: 40%;
+    }
+
+    .side-paragraph {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2.link {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+
+    .circular-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .responsive-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .responsive-section .side-image {
+        max-width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .responsive-section .side-paragraph {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .full-width {
+        width: 90%;
+        height: auto;
+    }
+
+    .side-image {
+        max-width: 50%;
+    }
+
+    .side-paragraph {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2.link {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    .circular-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .responsive-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .responsive-section .side-image {
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .responsive-section .side-paragraph {
+        max-width: 100%;
+    }
+}
+
+.responsive-section .container {
+    flex-direction: column;
+    text-align: center;
+}

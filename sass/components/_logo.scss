@@ -1,0 +1,21 @@
+.full-width {
+    /* Clase para hacer que un elemento ocupe todo el ancho de la pantalla IMAGEN LOGO-GIF */
+    width: 35%;
+    height: 35%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .circular-image {
+    border-radius: 50%; /* Ajusta el valor según sea necesario */
+    width: 100%; /* Ajusta el tamaño según sea necesario */
+    height: 100%; /* Ajusta el tamaño según sea necesario */
+    object-fit: cover;
+    margin-top: 30px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }

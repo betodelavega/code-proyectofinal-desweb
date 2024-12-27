@@ -1,0 +1,33 @@
+.fondoFooter {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  
+    p,
+    a {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    /* Redes sociales en el pie de página */
+    .redesSociales {
+      margin: 10px 0;
+  
+      a {
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+  
+        img {
+          width: 24px;
+          height: 24px;
+        }
+  
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
