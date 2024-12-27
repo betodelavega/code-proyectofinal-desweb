@@ -11,5 +11,8 @@
     "cocinarte"
   ],
   "author": "De la vega Alberto",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.1.0"
+  }
 }

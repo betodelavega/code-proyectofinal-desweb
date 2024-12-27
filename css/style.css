@@ -8,6 +8,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+    font-size: 16px; /* Base font size */
   }
   
   body::before {
@@ -142,6 +143,15 @@ h2.link:hover {
     margin: 0 20px; /* Espacio entre los elementos del navbar */
   }
 
+  .circular-image {
+    border-radius: 80%;
+    width: 500px; /* Ajusta el tamaño según sea necesario */
+    height: 500px; /* Ajusta el tamaño según sea necesario */
+    object-fit: cover;
+    margin-top: 30px ;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
 
   /* Estilos del pie de página */
 .fondoFooter {
@@ -177,3 +187,145 @@ h2.link:hover {
   .fondoFooter .redesSociales a:hover {
     transform: scale(1.2);
   }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .full-width {
+        width: 50%;
+        height: auto;
+    }
+
+    .side-image {
+        max-width: 30%;
+    }
+
+    .side-paragraph {
+        max-width: 60%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2.link {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+    .circular-image {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .full-width {
+        width: 70%;
+        height: auto;
+    }
+
+    .side-image {
+        max-width: 40%;
+    }
+
+    .side-paragraph {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2.link {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+
+    .circular-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .responsive-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .responsive-section .side-image {
+        max-width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .responsive-section .side-paragraph {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .full-width {
+        width: 90%;
+        height: auto;
+    }
+
+    .side-image {
+        max-width: 50%;
+    }
+
+    .side-paragraph {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2.link {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    .circular-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .responsive-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .responsive-section .side-image {
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .responsive-section .side-paragraph {
+        max-width: 100%;
+    }
+}
+
+.responsive-section .container {
+    flex-direction: column;
+    text-align: center;
+}
