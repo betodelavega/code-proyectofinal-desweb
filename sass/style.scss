@@ -1,3 +1,5 @@
+
+
 @use "./utilities/mixin";
 
 @use "./global/reset";
@@ -12,7 +14,21 @@
 
 @use "./utilities/media-query";
 
+.flex-container {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+}
 
+.flex-container img {
+  margin-right: 80px; /* Ajusta el margen según sea necesario */
+  width: 30%; /* Ajusta el ancho según sea necesario */
+}
+
+.float-left {
+  float: left;
+  margin-right: 80px; /* Ajusta el margen según sea necesario */
+  width: 30%; /* Ajusta el ancho según sea necesario */
+}
 
 .full-width {
     width: 35%;
@@ -142,20 +158,24 @@
   .circular-image {
     width: 500px;
     height: 500px;
+    margin-top: 80px; 
   
     @include media-query.respond-to(large) {
       width: 400px;
       height: 400px;
+      margin-top: 60px; 
     }
   
     @include media-query.respond-to(medium) {
       width: 300px;
       height: 300px;
+      margin-top: 50px; 
     }
   
     @include media-query.respond-to(small) {
       width: 200px;
       height: 200px;
+      margin-top: 40px; 
     }
   }
   
@@ -198,3 +218,56 @@
     color: #052664; // Cambia este valor al color que desees para el hover
 }
 
+
+
+.navbar {
+  font-family: 'Ysabeau SC', sans-serif; /* Cambia la fuente del navbar */
+  text-align: center; /* Centra el texto */
+  font-size: 20px;
+  font-weight: 400;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0c0c0c; /* Ajusta el color según tus necesidades */
+  color: white;
+  padding: 0px 0;
+  z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos del navbar */
+    width: 100%;
+
+    .nav-item {
+      margin: 0 20px; /* Espacio entre los elementos del navbar */
+    }
+  }
+
+  .navbar-collapse {
+    background-color: #fffafa; /* Ajusta el color de fondo del menú desplegable */
+
+  }
+
+  .navbar-toggler {
+    border-color: #050505; /* Cambia el color del borde del botón de toggler */
+ 
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+
+  ol {
+    padding-left: 20px; /* Ajusta el espacio de sangría según sea necesario */
+  }
+  
+  ol li {
+    margin-bottom: 10px; /* Ajusta el espacio inferior entre los elementos de la lista según sea necesario */
+  }

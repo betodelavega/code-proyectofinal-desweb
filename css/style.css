@@ -138,7 +138,7 @@ a:hover {
   width: 100%; /* Ajusta el tamaño según sea necesario */
   height: 100%; /* Ajusta el tamaño según sea necesario */
   object-fit: cover;
-  margin-top: 30px;
+  margin-top: 100px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
@@ -220,6 +220,14 @@ a:hover {
   text-align: center; /* Centra el texto */
   font-size: 20px;
   font-weight: 400;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e7dede; /* Ajusta el color según tus necesidades */
+  color: white;
+  padding: 10px 0;
+  z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
 }
 .navbar .navbar-nav {
   display: flex;
@@ -229,16 +237,12 @@ a:hover {
 .navbar .navbar-nav .nav-item {
   margin: 0 20px; /* Espacio entre los elementos del navbar */
 }
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #e7dede; /* Ajusta el color según tus necesidades */
-  color: white;
-  padding: 10px 0;
-  z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .navbar ul {
@@ -262,6 +266,22 @@ a:hover {
 
 .navbar a:hover {
   background-color: #e6d3d3; /* Ajusta el color según tus necesidades */
+}
+
+.flex-container {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+}
+
+.flex-container img {
+  margin-right: 80px; /* Ajusta el margen según sea necesario */
+  width: 30%; /* Ajusta el ancho según sea necesario */
+}
+
+.float-left {
+  float: left;
+  margin-right: 80px; /* Ajusta el margen según sea necesario */
+  width: 30%; /* Ajusta el ancho según sea necesario */
 }
 
 .full-width {
@@ -413,23 +433,27 @@ p {
 .circular-image {
   width: 500px;
   height: 500px;
+  margin-top: 80px;
 }
 @media (max-width: 1200px) {
   .circular-image {
     width: 400px;
     height: 400px;
+    margin-top: 60px;
   }
 }
 @media (max-width: 768px) {
   .circular-image {
     width: 300px;
     height: 300px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 480px) {
   .circular-image {
     width: 200px;
     height: 200px;
+    margin-top: 40px;
   }
 }
 
@@ -468,6 +492,50 @@ p {
 
 .pagination .page-link:hover {
   color: #052664;
+}
+
+.navbar {
+  font-family: "Ysabeau SC", sans-serif; /* Cambia la fuente del navbar */
+  text-align: center; /* Centra el texto */
+  font-size: 20px;
+  font-weight: 400;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0c0c0c; /* Ajusta el color según tus necesidades */
+  color: white;
+  padding: 0px 0;
+  z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+}
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: center; /* Centra los elementos del navbar */
+  width: 100%;
+}
+.navbar .navbar-nav .nav-item {
+  margin: 0 20px; /* Espacio entre los elementos del navbar */
+}
+.navbar .navbar-collapse {
+  background-color: #fffafa; /* Ajusta el color de fondo del menú desplegable */
+}
+.navbar .navbar-toggler {
+  border-color: #050505; /* Cambia el color del borde del botón de toggler */
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+ol {
+  padding-left: 20px; /* Ajusta el espacio de sangría según sea necesario */
+}
+
+ol li {
+  margin-bottom: 10px; /* Ajusta el espacio inferior entre los elementos de la lista según sea necesario */
 }
 
 /*# sourceMappingURL=style.css.map */

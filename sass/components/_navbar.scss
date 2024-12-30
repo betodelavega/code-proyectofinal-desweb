@@ -1,33 +1,37 @@
 
 
 .navbar {
-    font-family: 'Ysabeau SC', sans-serif; /* Cambia la fuente del navbar */
-    text-align: center; /* Centra el texto */
-    font-size: 20px;
-    font-weight: 400;
-  
-    .navbar-nav {
-      display: flex;
-      justify-content: center; /* Centra los elementos del navbar */
-      width: 100%;
-  
-      .nav-item {
-        margin: 0 20px; /* Espacio entre los elementos del navbar */
-      }
+  font-family: 'Ysabeau SC', sans-serif; /* Cambia la fuente del navbar */
+  text-align: center; /* Centra el texto */
+  font-size: 20px;
+  font-weight: 400;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e7dede; /* Ajusta el color según tus necesidades */
+  color: white;
+  padding: 10px 0;
+  z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos del navbar */
+    width: 100%;
+
+    .nav-item {
+      margin: 0 20px; /* Espacio entre los elementos del navbar */
     }
   }
 
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #e7dede; /* Ajusta el color según tus necesidades */
-    color: white;
-    padding: 10px 0;
-    z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
   }
-  
+}
   .navbar ul {
     list-style-type: none;
     margin: 0;
